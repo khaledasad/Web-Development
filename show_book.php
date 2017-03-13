@@ -1,0 +1,1 @@
+<?phprequire_once("Lai_core_functions.php");session_start();do_html_header();$isbn = $_GET['isbn'];$cat_array = get_book_info($isbn);display_book_info($cat_array);echo "<hr>";if(isset($_SESSION['admin_user']))    display_button("admin.php","admin-menu","Admin Menu");display_button('index.php','continue-shopping','Continue');do_html_footer();?>

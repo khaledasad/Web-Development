@@ -1,0 +1,1 @@
+<?phprequire_once("Lai_core_functions.php");do_html_header("Administration");display_login_form();do_html_footer();?>
